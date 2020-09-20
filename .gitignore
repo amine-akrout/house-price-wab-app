@@ -1,3 +1,4 @@
+.idea/
 .ipynb_checkpoints/
 catboost_info/
 data/
@@ -6,3 +7,4 @@ icone.jpg
 image.png
 logs.txt
 model.py
+log.log
