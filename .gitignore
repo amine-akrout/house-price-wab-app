@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+catboost_info/
+data/
+mlruns/
+icone.jpg
+image.png
+logs.txt
+model.py
