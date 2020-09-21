@@ -2,7 +2,7 @@ from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
 import numpy as np
-model = load_model('Final_model')
+model = load_model('model')
 
 def predict(model, input_df):
 	predictions_df = predict_model(estimator=model, data=input_df)
@@ -24,8 +24,8 @@ dic_BsmtQual = {'Excellent (100+ inches)':'Ex',
 
 def main():
 	from PIL import Image
-	image = Image.open('icone.jpg')
-	image2 = Image.open('image.png')
+	image = Image.open('images/icone.jpg')
+	image2 = Image.open('images/image.png')
 	st.image(image,use_column_width=False)
 	add_selectbox = st.sidebar.selectbox(
 	"How would you like to predict?",
